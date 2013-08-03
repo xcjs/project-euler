@@ -11,3 +11,6 @@
 *.lai
 *.la
 *.a
+
+# Project Euler Overview Documents
+*.pdf
