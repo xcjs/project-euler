@@ -13,9 +13,9 @@ using namespace std;
 
 main()
 {
-	const unsigned int limit = 1000;
-	unsigned int i = 0;
-	unsigned int sum = 0;
+	const unsigned limit = 1000;
+	unsigned i = 0;
+	unsigned sum = 0;
 
 	while(i < limit)
 	{

@@ -16,14 +16,14 @@ using namespace std;
 
 main()
 {
-	const unsigned int limit = 4000000;
+	const unsigned limit = 4000000;
 
-	unsigned int fibBase = 1;
-	unsigned int fib = 2;
+	unsigned fibBase = 1;
+	unsigned fib = 2;
 
-	unsigned int newFib;
+	unsigned newFib;
  
-	unsigned int sum = 0;
+	unsigned sum = 0;
 
 	while(fibBase < limit)
 	{
