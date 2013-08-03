@@ -11,11 +11,11 @@ using namespace std;
 	Find the sum of all the multiples of 3 or 5 below 1000.
 */
 
-main()
+int main()
 {
-	const unsigned limit = 1000;
-	unsigned i = 0;
-	unsigned sum = 0;
+	const unsigned int limit = 1000;
+	unsigned int i = 0;
+	unsigned int sum = 0;
 
 	while(i < limit)
 	{

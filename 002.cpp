@@ -14,7 +14,7 @@ using namespace std;
 	exceed four million, find the sum of the even-valued terms.
 */
 
-main()
+int main()
 {
 	const unsigned limit = 4000000;
 

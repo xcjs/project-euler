@@ -15,7 +15,7 @@ using namespace std;
 uint64_t getNextPrime(uint64_t);
 bool isPrime(uint64_t);
 
-main()
+int main()
 {
 	const uint64_t composite = 600851475143;
 	uint64_t squareRoot = sqrt((double) composite);
