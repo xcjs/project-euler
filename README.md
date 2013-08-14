@@ -1,7 +1,7 @@
 xcjs/project-euler
 ==================
 
-Vists <http://projecteuler.net> for more information.
+Vist <http://projecteuler.net> for more information.
 
 C++ Answers to Project Euler
 
@@ -65,5 +65,5 @@ Currently, I am able to test the code on the following platforms:
 * Ubuntu Linux,  32 bit armhf on an ARMv7 OMAP4 CPU (Ubuntu using an Android
 Linux kernel on a DROID 4 mobile phone device)
 
-If there are any issues with building any of the solutions, please create an
-issue, and I will solve the issue as soon as possible.
+If there are any difficulties with building any of the solutions, please create an
+issue, and I will solve it as soon as possible.
