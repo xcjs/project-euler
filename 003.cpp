@@ -1,6 +1,18 @@
 #include <iostream>
 #include <cmath>
-#include <stdint.h>
+
+/*
+	stdint.h is included for standard width integers. In some 64 bit 
+	environments, the long type is 8 bytes long, but in almost all 32
+	bit environments, the long type is 4 bytes long.
+
+	Using standard int widths eases cross-platform compatibility.
+
+	It is worth noting that in GCC, passing -mx32 will use 32 bit 
+	pointers for int and long data types. Passing -m32 will generate
+	32 bit code. 
+*/
+#include <stdint.h>	// Included for standardized integer widths. For GCC, use -mx32 to use 
 
 using namespace std;
 
@@ -70,7 +82,11 @@ uint64_t getNextPrime(uint64_t num)
 
 bool isPrime(uint64_t num)
 {
+	// 1 is an exceptional case - it is an odd number that is only divisible by 
+	// one and itself that is not prime.
 	if (num == 1) return false;
+	// 2 is an exceptional case - it is an even number divided by 1 and itself,
+	// so it is a prime number.
 	if (num == 2) return true;
 
 	bool prime = true;
