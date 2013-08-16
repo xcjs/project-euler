@@ -1,6 +1,6 @@
 #include <iostream>
 #include <sstream>
-#include <string>	// This should already be included in sstream.
+#include <string>		// This should already be included in sstream.
 #include <algorithm>	// This provides a handy reverse() method for this particular problem.
 #include <cmath>
 
