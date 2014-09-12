@@ -12,7 +12,7 @@
 	pointers for int and long data types. Passing -m32 will generate
 	32 bit code. 
 */
-#include <stdint.h>	// Included for standardized integer widths. For GCC, use -mx32 to use 
+#include <stdint.h>	// Included for standardized integer widths.
 
 using namespace std;
 
