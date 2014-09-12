@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cstdlib>
 
+#include "libeuler/problems/ProblemFactory.h"
+
 void solveProblem(int problemNum);
 
 int main(int argc, char* argv[]) {
@@ -25,8 +27,5 @@ int main(int argc, char* argv[]) {
 }
 
 void solveProblem(int problemNum) {
-	switch(problemNum) {
-		default:
-			std::cout << "Sorry, I don't know how to solve problem #" << problemNum << " yet. :(" << std::endl;
-	}
+	libeuler::problems::ProblemFactory::PrepareProblem(problemNum);
 }

@@ -1,7 +1,7 @@
 #ifndef PROJECT_EULER_LIBEULER_PROBLEMS_PROBLEMFACTORY_
 #define PROJECT_EULER_LIBEULER_PROBLEMS_PROBLEMFACTORY_
 
-namespace eulerlib {
+namespace libeuler {
 	namespace problems {
 		class ProblemFactory {
 			public:

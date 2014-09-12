@@ -11,7 +11,7 @@ CC = g++
 #
 # -Wall tells g++ to display all compiler warnings.
 
-CFLAGS = -Wall -fpic
+CFLAGS = -Wall
 
 SRC = src/
 LIBEULERSRC = $(SRC)libeuler/
@@ -27,7 +27,7 @@ all: environment libeuler euler
 environment:
 	$(MKDIR_P) $(OUTPUT)
 
-LIBEULERFILES = $(LIBPROBLEMSSRC)ProblemFactory.cpp $(LIBPROBLEMSSRC)ProblemFactory.h
+LIBEULERFILES = $(LIBPROBLEMSSRC)ProblemFactory.cpp
 
 libeuler: environment
 	$(CC) $(CFLAGS) -c $(LIBEULERFILES) -o $(OUTPUT)libeuler.a
@@ -35,4 +35,4 @@ libeuler: environment
 EULERDEPS = $(OUTPUT)libeuler.a
 
 euler: $(EULERDEPS) environment
-	$(CC) $(CFLAGS) $(SRC)euler.cpp -o $(OUTPUT)euler.o
+	$(CC) $(CFLAGS) $(SRC)euler.cpp -o $(OUTPUT)euler -L $(OUTPUT) -l euler
