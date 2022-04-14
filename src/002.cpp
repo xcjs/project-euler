@@ -22,7 +22,7 @@ int main()
 	unsigned fib = 2;
 
 	unsigned newFib;
- 
+
 	unsigned sum = 0;
 
 	while(fibBase < limit)
