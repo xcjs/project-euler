@@ -38,7 +38,7 @@ namespace euler
                 uint64_t squareRoot = sqrt((double)composite);
 
                 uint64_t prime = 2;
-                uint64_t largestPrime;
+                uint64_t largestPrime = 0;
 
                 uint64_t quotient = composite;
 
