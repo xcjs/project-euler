@@ -19,3 +19,6 @@ obj/*
 
 # Project Euler Overview Documents
 *.pdf
+
+# Unused Editor Files
+.vscode/*
