@@ -9,11 +9,19 @@ Build:
     - shell
   script:
     - make
+  artifacts:
+    name: euler
+    expire_in: 1 week
+    paths:
+      - obj/
 
 Run:
   stage: Run
   tags:
     - linux
     - shell
+  needs:
+    - job: Build
+      artifacts: true
   script:
     - ./obj/euler
