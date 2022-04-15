@@ -49,8 +49,8 @@ make
 ```
 
 ...should be all you need to build the project, provided you have the
-build-essential package or its equivalent installed have the project directory
-set as your working directory.
+build-essential package or its equivalent installed and have the project
+directory set as your working directory.
 
 After that, you just need to run the application:
 
