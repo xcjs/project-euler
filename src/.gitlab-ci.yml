@@ -1,0 +1,19 @@
+stages:
+  - Build
+  - Run
+
+Build:
+  stage: Build
+  tags:
+    - linux
+    - shell
+  script:
+    - make
+
+Run:
+  stage: Run
+  tags:
+    - linux
+    - shell
+  script:
+    - ./obj/euler
