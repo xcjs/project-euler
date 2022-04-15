@@ -1,8 +1,8 @@
 # This Makefile will be overly documented to provide a reference to GNU Make
-# (myself being new to C++ and Make) and to assist others who may wish to learn 
+# (myself being new to C++ and Make) and to assist others who may wish to learn
 # from this project.
 
-# The CC variable tells Make to use the specified compiler for this project (g++ 
+# The CC variable tells Make to use the specified compiler for this project (g++
 # in this case).
 
 CC = g++
@@ -13,26 +13,15 @@ CC = g++
 
 CFLAGS = -Wall
 
-SRC = src/
-LIBEULERSRC = $(SRC)libeuler/
-LIBPROBLEMSSRC = $(LIBEULERSRC)problems/
-
 OUTPUT = obj/
 
 MKDIR_P = mkdir -p
 
-all: environment libeuler euler
+all: environment euler
 
 .PHONY: environment
 environment:
 	$(MKDIR_P) $(OUTPUT)
 
-LIBEULERFILES = $(LIBPROBLEMSSRC)ProblemFactory.cpp
-
-libeuler: environment
-	$(CC) $(CFLAGS) -c $(LIBEULERFILES) -o $(OUTPUT)libeuler.a
-
-EULERDEPS = $(OUTPUT)libeuler.a
-
-euler: $(EULERDEPS) environment
-	$(CC) $(CFLAGS) $(SRC)euler.cpp -o $(OUTPUT)euler -L $(OUTPUT) -l euler
+euler: environment
+	$(CC) $(CFLAGS) src/main.cpp -o $(OUTPUT)euler
