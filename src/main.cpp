@@ -20,7 +20,7 @@ int main()
 	problems.push_back(new Problem004());
 
 	for_each(problems.begin(), problems.end(), [](IProblem* problem)
-			 {
+		{
 			cout << problem->GetProblemDescription() << endl;
 			problem->SolveProblem();
 
@@ -32,7 +32,7 @@ int main()
 
 			assert(correctAnswer == computedAnswer);
 			delete problem;
-	});
+		});
 
 	return 0;
 }
