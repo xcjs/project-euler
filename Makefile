@@ -11,7 +11,7 @@ CC = g++
 #
 # -Wall tells g++ to display all compiler warnings.
 
-CFLAGS = -Wall
+CFLAGS = -Wall -O3
 
 OUTPUT = obj/
 
