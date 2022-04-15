@@ -5,10 +5,9 @@ Vist <http://projecteuler.net> for more information.
 ## Introduction
 
 I am approaching this project from the direction of a .NET/Web Developer with
-interests in what I consider lower level, or "true", programming environments.
+an interest in native software development.
 
-I have several personal goals tied into creating this repository and working on
-its accompanying codebase:
+I have several personal goals tied into creating this repository:
 
 * I am challenging myself to learn the C++ programming language and wish to
 document my progress
@@ -49,8 +48,8 @@ make
 ```
 
 ...should be all you need to build the project, provided you have the
-build-essential package or its equivalent installed have the project directory
-set as your working directory.
+build-essential package or its equivalent installed and have the project
+directory set as your working directory.
 
 After that, you just need to run the application:
 
